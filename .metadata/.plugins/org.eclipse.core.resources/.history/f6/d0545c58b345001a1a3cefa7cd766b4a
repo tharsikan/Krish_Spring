@@ -1,0 +1,5 @@
+package com.krishantha.training_anotation.salesmanager.config;
+
+public class ApplicationConfig {
+
+}

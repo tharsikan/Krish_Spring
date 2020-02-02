@@ -1,0 +1,23 @@
+package com.krishantha.training;
+
+import java.util.List;
+
+import com.krishantha.training.salesmanager.model.Employee;
+import com.krishantha.training.salesmanager.service.EmployeeService;
+import com.krishantha.training.salesmanager.service.EmployeeServiceImpl;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+       // EmployeeService employeeService = new EmployeeServiceImpl();	 tight cupple
+        List<Employee> employees = employeeService.getAllEmployee();
+        for(Employee employee: employees) {
+        	System.out.println(employee.getEmployeeName()+" at "+employee.getEmployeeLocation());
+        }
+    }
+}

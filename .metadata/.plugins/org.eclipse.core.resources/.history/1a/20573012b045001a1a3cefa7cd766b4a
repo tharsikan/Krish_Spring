@@ -1,0 +1,38 @@
+package com.krishantha.training.salesmanager.service;
+
+import java.util.List;
+
+import com.krishantha.training_anotation.salesmanager.model.Employee;
+import com.krishantha.training_anotation.salesmanager.repository.EmployeeRepository;
+import com.krishantha.training_anotation.salesmanager.repository.HibernateEmployeeRepositoryImpl;
+
+public class EmployeeServiceImpl implements EmployeeService{
+	// EmployeeRepository employeeRepository = new HibernateEmployeeRepositoryImpl();   tight cuple
+	
+	private EmployeeRepository employeeRepositoryy;
+	
+//	public EmployeeServiceImpl() {
+//		
+//	}
+	public EmployeeServiceImpl(EmployeeRepository employeeRepositoryy,int s) {
+		this.employeeRepositoryy = employeeRepositoryy;
+	}
+	public EmployeeServiceImpl(EmployeeRepository employeeRepositoryy) {
+		this.employeeRepositoryy = employeeRepositoryy;
+	}
+//
+//
+//
+//	public void setEmployeeRepository(EmployeeRepository employeeRepositoryy) {
+//		this.employeeRepositoryy = employeeRepositoryy;
+//	}
+//
+//
+//
+	@Override
+	public List<Employee> getAllEmployee() {
+		return employeeRepositoryy.getAllEmployees();
+	
+	}
+	
+}

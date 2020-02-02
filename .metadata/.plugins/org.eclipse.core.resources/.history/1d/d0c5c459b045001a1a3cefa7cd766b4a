@@ -1,0 +1,27 @@
+package com.krishantha.trainingAno;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.krishantha.trainingAno.salesmanager.repository.EmployeeRepository;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+       // EmployeeService employeeService = new EmployeeServiceImpl();	 tight cupple
+    	ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+    	//EmployeeService employeeService = (EmployeeService) applicationContext.getBean("employeeService",EmployeeService.class);
+    	 
+//    	List<Employee> employees = employeeService.getAllEmployee();
+//        for(Employee employee: employees) {
+//        	System.out.println(employee.getEmployeeName()+" at "+employee.getEmployeeLocation());
+//        }
+    	
+    	//EmployeeRepository er =  (EmployeeRepository) applicationContext.getBean("employeeRepository");
+    }
+}

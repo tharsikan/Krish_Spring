@@ -1,0 +1,29 @@
+package com.krishantha.training_anotation.salesmanager.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.krishantha.training_anotation.salesmanager.repository.EmployeeRepository;
+import com.krishantha.training_anotation.salesmanager.repository.HibernateEmployeeRepositoryImpl;
+import com.krishantha.training_anotation.salesmanager.service.EmployeeService;
+import com.krishantha.training_anotation.salesmanager.service.EmployeeServiceImpl;
+
+@Configuration
+@ComponentScan("com.krishantha.training_anotation.salesmanager")
+public class ApplicationConfig {
+//	@Bean(name="employeeService")
+//	public EmployeeService getEmployeeService() {
+//		return new EmployeeServiceImpl(getEmployeeRepository());
+//	}
+	
+	@Bean(name="employeeService")
+	public EmployeeService getEmployeeService() {
+		EmployeeService employeeService = new EmployeeServiceImpl();
+		return employeeService;
+	}
+	@Bean(name="setter_injection_useType")
+	public EmployeeRepository getEmployeeRepository() {
+		return new HibernateEmployeeRepositoryImpl();
+	}
+}

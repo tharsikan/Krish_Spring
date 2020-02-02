@@ -1,0 +1,9 @@
+package com.krishantha.training.salesmanager.model;
+
+import java.util.List;
+
+import com.krishantha.trainingAno.salesmanager.model.Employee;
+
+public interface EmployeeService {
+	List<Employee> getAllEmployee();
+}

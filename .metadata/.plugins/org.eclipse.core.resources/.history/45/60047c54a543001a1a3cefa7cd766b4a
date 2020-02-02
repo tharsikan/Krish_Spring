@@ -1,0 +1,8 @@
+package com.krishantha.tharsikan.model;
+
+public interface Vehicle {
+	void drive();
+	defeult void tyre() {
+		System.out.println("no name");
+	};
+}

@@ -1,0 +1,5 @@
+package com.krishantha.tharsikan.model;
+
+public class Bike {
+
+}

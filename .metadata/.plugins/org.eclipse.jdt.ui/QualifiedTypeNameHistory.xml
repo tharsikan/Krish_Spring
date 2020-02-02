@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.krishantha.training.salesmanager.model.Employee"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.krishantha.training.salesmanager.repository.HibernateEmployeeRepositoryImpl"/>
+<fullyQualifiedTypeName name="com.krishantha.training.salesmanager.repository.EmployeeRepository"/>
+<fullyQualifiedTypeName name="com.krishantha.training.salesmanager.service.EmployeeService"/>
+<fullyQualifiedTypeName name="com.krishantha.training.salesmanager.service.EmployeeServiceImpl"/>
+</qualifiedTypeNameHistroy>

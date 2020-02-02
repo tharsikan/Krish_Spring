@@ -1,0 +1,23 @@
+package com.krishantha.trainig_anotation.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Bike implements Vehicle{
+	
+	@Autowired
+	private Tyre tyre;
+	
+	public void drive() {
+		System.out.println("jaali");
+	}
+
+	public void setTyre(Tyre tyre) {
+		this.tyre = tyre;
+	}
+	
+	public void tyre() {
+		System.out.println(this.tyre);
+	}
+}

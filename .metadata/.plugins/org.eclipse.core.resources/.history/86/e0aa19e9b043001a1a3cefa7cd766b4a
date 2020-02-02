@@ -1,0 +1,7 @@
+package com.krishantha.tharsikan.model;
+
+public interface Tyre {
+	default String getName() { 
+        return "dont have tyre";  
+    }  
+}

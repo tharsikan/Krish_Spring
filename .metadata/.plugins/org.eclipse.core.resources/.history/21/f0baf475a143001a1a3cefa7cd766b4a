@@ -1,0 +1,21 @@
+package com.krishantha.tharsikan;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.krishantha.tharsikan.model.Car;
+import com.krishantha.tharsikan.model.Vehicle;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Vehicle v = (Vehicle) applicationContext.getBean("car");
+        v.drive();
+    }
+}

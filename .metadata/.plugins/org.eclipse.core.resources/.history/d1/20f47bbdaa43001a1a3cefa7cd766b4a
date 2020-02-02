@@ -1,0 +1,29 @@
+package com.krishantha.tharsikan;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.krishantha.tharsikan.model.Bike;
+import com.krishantha.tharsikan.model.Car;
+import com.krishantha.tharsikan.model.Tyre;
+
+@Configuration
+public class AppConfig {
+	
+	@Bean
+	public Bike setBike() {
+		return new Bike();
+	}
+	
+	@Bean
+	public Tyre setTyre() {
+		Tyre x = new Tyre();
+		x.setName("tharsikan");
+		return x;
+	}
+	
+	@Bean
+	public Car setCar() {
+		return new Car();
+	}
+}

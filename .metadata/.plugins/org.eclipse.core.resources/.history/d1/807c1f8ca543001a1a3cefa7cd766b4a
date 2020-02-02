@@ -1,0 +1,14 @@
+package com.krishantha.tharsikan.model;
+
+public class Bike implements Vehicle{
+	
+	private Tyre tyre;
+	
+	public void drive() {
+		System.out.println("jaali");
+	}
+
+	public void setTyre(Tyre tyre) {
+		this.tyre = tyre;
+	}
+}

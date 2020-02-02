@@ -1,0 +1,24 @@
+package com.krishantha.thaining_anotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.krishantha.trainig_anotation.model.Tyre;
+import com.krishantha.trainig_anotation.model.Vehicle;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Vehicle v = (Vehicle) applicationContext.getBean("bike");
+        v.drive();
+        v.tyre();
+        Tyre t = (Tyre) applicationContext.getBean("tyre");
+        System.out.println(t.getName());
+    }
+}
